@@ -1,17 +1,20 @@
-# python sdk for qcloud cos
-python sdk for [腾讯云COS服务]
-version: 3.3
+#!/usr/bin/env python
+# coding=utf-8
 
-## 安装指南
+from qcloud_cos import CosClient
+from qcloud_cos import UploadFileRequest
+from qcloud_cos import UploadSliceFileRequest
+from qcloud_cos import UpdateFileRequest
+from qcloud_cos import UpdateFolderRequest
+from qcloud_cos import DelFileRequest
+from qcloud_cos import MoveFileRequest
+from qcloud_cos import DelFolderRequest
+from qcloud_cos import CreateFolderRequest
+from qcloud_cos import StatFileRequest
+from qcloud_cos import StatFolderRequest
+from qcloud_cos import ListFolderRequest
 
-### 下载源码
-从github下载源码https://github.com/tencentyun/cos-python-sdk/tree/3.3
-
-### 安装qcloud_cos
-python setup.py install
-
-### 使用python sdk，参照sample.py
-```python
+def cos_demo():
     # 设置用户属性, 包括appid, secret_id和secret_key
     # 这些属性可以在cos控制台获取(https://console.qcloud.com/cos)
     appid = 100000                  # 替换为用户的appid
@@ -101,4 +104,6 @@ python setup.py install
     request = DelFolderRequest(bucket, u'/sample_folder/')
     delete_folder_ret = cos_client.del_folder(request)
     print 'delete folder ret:', repr(delete_folder_ret)
-```
+
+if __name__ == '__main__':
+    cos_demo()
