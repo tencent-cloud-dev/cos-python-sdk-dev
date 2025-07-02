@@ -1,1 +1,1 @@
-# HJS
+# cos-python-sdk-dev
