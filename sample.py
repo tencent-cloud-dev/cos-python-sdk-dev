@@ -18,8 +18,8 @@ def cos_demo():
     # 设置用户属性, 包括appid, secret_id和secret_key
     # 这些属性可以在cos控制台获取(https://console.qcloud.com/cos)
     appid = 1310093706                  # 替换为用户的appid
-    secret_id = u'AKIDmRtAHF3eHjz1sdCboodFfsxqYhdOwIRP'         # 替换为用户的secret_id
-    secret_key = u'qUu9B3h8PVP6aRCwVr44uX0HWcXlmaAb'         # 替换为用户的secret_key
+    secret_id = u'XXXXXXXXXXXXXXXXXX'         # 替换为用户的secret_id
+    secret_key = u'XXXXXXXXXXXXXXXXXX'         # 替换为用户的secret_key
     cos_client = CosClient(appid, secret_id, secret_key)
 
     # 设置要操作的bucket
