@@ -17,13 +17,13 @@ from qcloud_cos import ListFolderRequest
 def cos_demo():
     # 设置用户属性, 包括appid, secret_id和secret_key
     # 这些属性可以在cos控制台获取(https://console.qcloud.com/cos)
-    appid = 1310093706                  # 替换为用户的appid
-    secret_id = u'XXXXXXXXXXXXXXXXXX'         # 替换为用户的secret_id
-    secret_key = u'XXXXXXXXXXXXXXXXXX'         # 替换为用户的secret_key
+    appid = 1251616822                  # 替换为用户的appid
+    secret_id = u'AKIDiHfuwnTzKVfmmrslV4RcaNxMZaQ3Vlph'         # 替换为用户的secret_id
+    secret_key = u'jU6XnqgLm00oQr57yc4JLCukWAoPp7D6'         # 替换为用户的secret_key
     cos_client = CosClient(appid, secret_id, secret_key)
 
     # 设置要操作的bucket
-    bucket = u'cloud-dev-1310093706'
+    bucket = u'cloud-dev-1251616822'
 
     ############################################################################
     # 文件操作                                                                 #
